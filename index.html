@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV-Test</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<style type="text/css">
+	html,body,h1,h2,div{
+		font-family: "Open Sans", sans-serif;
+		margin:0;
+		padding:0;
+	}
+
+	html,body{
+		overflow: hidden;
+	}
+
+	.container{
+		overflow-y: hidden;
+		background: #000;
+		color:#fff;`
+	}
+
+	header{
+		position: relative;
+		top:0;
+		right:0;
+		height: 100vh;
+		width: 100vh;
+
+	}
+
+	.header{
+		padding-left: 90px;
+		position: relative;
+		top: 300px;
+		/*background: #ccc;*/
+	}
+
+	.header h1{
+		font-size: 60px;
+	}
+	.header span{
+		display: inline-block;
+	}
+	.header .title{
+		font-size: 40px; 
+		color:#03d5da;
+	}
+	.header h2{
+		font-size: 16px;
+	}
+	/**button**/
+	.btn-container {
+	  position: absolute;
+	  left: 50%;
+	  margin: 0 0 100px -150px;
+	}
+
+	.btn {
+	  width: 300px;
+	  height: 50px;
+	  line-height: 50px;
+	  background-color: #03d5da;
+	  border-radius: 8px;
+	  color: #fff;
+	  font-family: 'Indie Flower', cursive;
+	  font-size: 22px;
+	  font-weight: normal;
+	  text-decoration: none;
+	  text-align: center;
+	  display: inline-block;
+	  position: relative;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: -webkit-transform;
+	  transition-property: transform;
+	  -webkit-transform: translateZ(0);
+	  -ms-transform: translateZ(0);
+	  transform: translateZ(0);
+	  box-shadow: 0 0 1px transparent;
+	  -webkit-transform: translateY(-6px);
+	  -ms-transform: translateY(-6px);
+	  transform: translateY(-6px);
+	  -webkit-animation-name: hover;
+	  animation-name: hover;
+	  -webkit-animation-duration: 1.5s;
+	  animation-duration: 1.5s;
+	  -webkit-animation-delay: 0.3s;
+	  animation-delay: 0.3s;
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  animation-direction: alternate;
+	}
+	.btn:before {
+	  pointer-events: none;
+	  position: absolute;
+	  z-index: -1;
+	  content: '';
+	  top: 100%;
+	  left: 5%;
+	  height: 10px;
+	  width: 90%;
+	  opacity: 0;
+	  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: -webkit-transform, opacity;
+	  transition-property: transform, opacity;
+	  opacity: .4;
+	  -webkit-transform: translateY(6px);
+	  -ms-transform: translateY(6px);
+	  transform: translateY(6px);
+	  -webkit-animation-name: hover-shadow;
+	  animation-name: hover-shadow;
+	  -webkit-animation-duration: 1.5s;
+	  animation-duration: 1.5s;
+	  -webkit-animation-delay: .3s;
+	  animation-delay: .3s;
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  animation-direction: alternate;
+	}
+	.btn:hover {
+	  background-color: #e16e50;
+	}
+
+	@keyframes hover {
+	  50% {
+	    -webkit-transform: translateY(-3px);
+	    -ms-transform: translateY(-3px);
+	    transform: translateY(-3px);
+	  }
+	  100% {
+	    -webkit-transform: translateY(-6px);
+	    -ms-transform: translateY(-6px);
+	    transform: translateY(-6px);
+	  }
+	}
+	@-webkit-keyframes hover-shadow {
+	  0% {
+	    -webkit-transform: translateY(6px);
+	    transform: translateY(6px);
+	    opacity: .4;
+	  }
+	  50% {
+	    -webkit-transform: translateY(3px);
+	    transform: translateY(3px);
+	    opacity: 1;
+	  }
+	  100% {
+	    -webkit-transform: translateY(6px);
+	    transform: translateY(6px);
+	    opacity: .4;
+	  }
+	}
+	@keyframes hover-shadow {
+	  0% {
+	    -webkit-transform: translateY(6px);
+	    -ms-transform: translateY(6px);
+	    transform: translateY(6px);
+	    opacity: .4;
+	  }
+	  50% {
+	    -webkit-transform: translateY(3px);
+	    -ms-transform: translateY(3px);
+	    transform: translateY(3px);
+	    opacity: 1;
+	  }
+	  100% {
+	    -webkit-transform: translateY(6px);
+	    -ms-transform: translateY(6px);
+	    transform: translateY(6px);
+	    opacity: .4;
+	  }
+	}
+	@-webkit-keyframes hover {
+	  50% {
+	    -webkit-transform: translateY(-3px);
+	    transform: translateY(-3px);
+	  }
+	  100% {
+	    -webkit-transform: translateY(-6px);
+	    transform: translateY(-6px);
+	  }
+	}
+	@keyframes hover {
+	  50% {
+	    -webkit-transform: translateY(-3px);
+	    -ms-transform: translateY(-3px);
+	    transform: translateY(-3px);
+	  }
+	  100% {
+	    -webkit-transform: translateY(-6px);
+	    -ms-transform: translateY(-6px);
+	    transform: translateY(-6px);
+	  }
+	}
+
+
+		/**Pyrymid******/
+
+	#pyramid {
+    position: absolute;
+	    left: 50%;
+	    margin-left: 120px;
+	    top: 50%;
+	    margin-top: -210px;
+	    height: 500px;
+	    width: 100px;
+	    -webkit-transform-style: preserve-3d;
+	    -webkit-animation: spin 10s linear infinite;
+	    -webkit-transform-origin: 116px 200px 116px;
+	    -moz-transform-style: preserve-3d;
+	    -moz-animation: spin 10s linear infinite;
+	    -moz-transform-origin: 116px 200px 116px;
+	    -ms-transform-style: preserve-3d;
+	    -ms-animation: spin 10s linear infinite;
+	    -ms-transform-origin: 116px 200px 116px;
+	    transform-style: preserve-3d;
+	    animation: spin 10s linear infinite;
+	    transform-origin: 116px 200px 116px;
+	}
+
+	@-webkit-keyframes spin {
+            from {
+                -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+        @-moz-keyframes spin {
+            from {
+                -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+        @-ms-keyframes spin {
+            from {
+                -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                -ms-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+	#pyramid > div {
+	    position: absolute;
+	    border-style: solid;
+	    border-width: 200px 0 200px 346px;
+	    -webkit-transform-origin: 0 0;
+	    -moz-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	    transform-origin: 0 0;
+	}
+
+	#pyramid > div:after {
+	    position: absolute;
+	    color: #fff;
+	    left: -311px;
+	    top: -69px;
+	    text-align: center;
+	    opacity: 0.6;
+	}
+
+	#pyramid > div:first-child {
+	    border-color: transparent transparent transparent rgba(50, 50, 50, 0.6);
+	    -webkit-transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+	    -moz-transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+	    -ms-transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+	    transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+	}
+
+	#pyramid > div:nth-child(1):after {
+	    position: absolute;
+	    content:url("img/angular.png");
+	}
+
+	#pyramid > div:nth-child(2) {
+	    border-color: transparent transparent transparent rgba(50, 50, 50, 0.6);
+	    -webkit-transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+	    -moz-transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+	    -ms-transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+	    transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+	}
+
+	#pyramid > div:nth-child(2):after {
+	    position: absolute;
+	    content:url("img/wordpress.png");
+	}
+	
+	#pyramid > div:nth-child(3) {
+	    border-color: transparent transparent transparent rgba(50, 50, 50, 0.9);
+	    -webkit-transform: rotateX(60deg) rotateY(19.5deg);
+	    -moz-transform: rotateX(60deg) rotateY(19.5deg);
+	    -ms-transform: rotateX(60deg) rotateY(19.5deg);
+	    transform: rotateX(60deg) rotateY(19.5deg);
+	}
+
+	#pyramid > div:nth-child(3):after {
+	    position: absolute;
+	    content:url("img/node.png");
+	}
+
+	#pyramid > div:nth-child(4) {
+	    border-color: transparent transparent transparent rgba(50, 50, 50, 0.8);
+	    -webkit-transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+	    -moz-transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+	    -ms-transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+	    transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+	}
+
+	#pyramid > div:nth-child(4):after {
+	    position: absolute;
+	    content:url("img/hcj.png");
+	    left: -315px;
+	    top: -91px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header">
+				<h1>
+					<span>H</span><span>y</span><span>,</span>
+					<br>
+					<span>I</span><span>'</span><span>m</span> <span>A</span><span>b</span><span>i</span><span>r</span><span>a</span><span>l</span><span>,</span>
+					</br>
+				</h1>
+				<div class="title">Full Stack Developer.</div><br>
+				<h2>Front End Developer / Web Developer / WordPress </h2>
+				<br>
+				<div class="btn-container">
+				  <a href="#" class="btn">Contact Me!</a>
+				</div>
+			</div>
+		</header>
+		
+		<section id="pyramid" style="padding-left: 13.3333px; padding-top: 22.5px;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.header h1').mouseenter(function(){
+				$(this).addClass('animated infinite pulse');
+			}).mouseleave(function(){
+				$(this).removeClass('animated infinite pulse');
+			});
+
+		   $('.header span').mouseenter( function() {
+		   		$(this).css("color","red").css("font-size","100px");
+		   }).mouseleave( function(){
+		   		$(this).css("color","white").css("font-size","60px");
+		   });
+
+		});
+	</script>
+
+</body>
+</html>
